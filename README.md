@@ -34,3 +34,23 @@ This gem sets up everything you need to deploy your application on the Panter ra
   ```sh
   cap production deploy
   ```
+
+## dotenv setup
+
+This is optional, but recommended:
+
+- Add a file on your servers in `/home/app/app/shared/.env` with your keys:
+  ```sh
+  RAILS_SECRET_KEY_BASE: ...
+  ```
+
+- Replace your keys in `config/secrets.yml` and other places with references to `ENV`:
+  ```ruby
+  production:
+    secret_key_base: <%= ENV["RAILS_SECRET_KEY_BASE"] %>
+  ```
+
+- Update `config/deploy.rb` to symlink the `.env` file during deploy:
+  ```ruby
+  set :linked_files, fetch(:linked_files, []).push('.env')
+  ```

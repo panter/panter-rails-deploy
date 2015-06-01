@@ -6,9 +6,12 @@ namespace :load do
     set :ssh_options, -> { { user: fetch(:user), forward_agent: true } }
     set :log_level, :info
 
-    set :linked_files, []
+    set :linked_files, %w[ config/database.yml ]
     set :linked_dirs, %w[ log tmp/cache ]
-    
+
+    # Setup capistrano-rails
+    set :rails_env, 'production'
+
     # Setup capistrano-rbenv
     set :rbenv_ruby, open("#{ Bundler.root }/.ruby-version").read.strip
 

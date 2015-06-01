@@ -44,6 +44,8 @@ This is optional, but recommended:
   RAILS_SECRET_KEY_BASE: ...
   ```
 
+- If you need keys in development as well, add `.env` locally and add it to `.gitignore`
+
 - Replace your keys in `config/secrets.yml` and other places with references to `ENV`:
   ```ruby
   production:

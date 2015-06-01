@@ -31,7 +31,6 @@ GEM
     capistrano-rbenv-install (1.2.0)
       capistrano (>= 3.0)
       capistrano-rbenv (>= 2.0)
-    coderay (1.1.0)
     colorize (0.7.7)
     dotenv (2.0.1)
     dotenv-rails (2.0.1)
@@ -40,19 +39,13 @@ GEM
     i18n (0.7.0)
     kgio (2.9.3)
     libv8 (3.16.14.7)
-    method_source (0.8.2)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.2)
-    pry (0.10.1)
-      coderay (~> 1.1.0)
-      method_source (~> 0.8.1)
-      slop (~> 3.4)
     rack (1.6.1)
     raindrops (0.13.0)
     rake (10.4.2)
     ref (1.0.5)
-    slop (3.6.0)
     sshkit (1.7.1)
       colorize (>= 0.7.0)
       net-scp (>= 1.1.2)
@@ -73,4 +66,3 @@ PLATFORMS
 
 DEPENDENCIES
   panter-rails-deploy!
-  pry

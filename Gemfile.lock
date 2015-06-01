@@ -8,7 +8,6 @@ PATH
       capistrano-rbenv
       capistrano-rbenv-install
       dotenv-rails
-      execjs
       therubyracer
       unicorn-rails
 
@@ -35,7 +34,6 @@ GEM
     dotenv (2.0.1)
     dotenv-rails (2.0.1)
       dotenv (= 2.0.1)
-    execjs (2.5.2)
     i18n (0.7.0)
     kgio (2.9.3)
     libv8 (3.16.14.7)

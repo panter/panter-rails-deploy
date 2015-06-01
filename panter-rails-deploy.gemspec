@@ -22,6 +22,5 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'dotenv-rails'
 
   # Asset pipeline dependencies
-  gem.add_dependency 'execjs'
   gem.add_dependency 'therubyracer'
 end

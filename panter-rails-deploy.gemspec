@@ -1,26 +1,16 @@
 Gem::Specification.new do |gem|
   gem.name        = 'panter-rails-deploy'
-  gem.version     = '0.0.1'
+  gem.version     = '1.0.0'
   gem.date        = '2015-06-01'
   gem.summary     = 'Capistrano setup for Panter Rails Hosting'
   gem.authors     = [ 'Markus Koller', 'Beat Seeliger' ]
   gem.email       = 'mak@panter.ch'
   gem.homepage    = 'https://github.com/panter/panter-rails-deploy'
   gem.license     = 'Beerware'
+  gem.required_ruby_version = '>= 2.0.0'
 
   gem.files         = `git ls-files`.split($/)
   gem.require_paths = [ 'lib' ]
-
-  gem.post_install_message = <<eof
-
-Next steps:
-- Run "cap install"
-- Set your servers, branches, and Rails environments in config/deploy/*
-- Deploy!
-
-eof
-
-  gem.required_ruby_version = '>= 2.0.0'
 
   # Deployment dependencies
   gem.add_dependency 'capistrano'

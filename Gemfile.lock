@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    panter-rails-deploy (1.0.1)
+    panter-rails-deploy (1.0.2)
       capistrano
       capistrano-bundler
       capistrano-rails

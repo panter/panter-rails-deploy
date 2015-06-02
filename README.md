@@ -6,6 +6,7 @@ This gem sets up everything you need to deploy your application on the Panter ra
 - unicorn
 - rbenv
 - dotenv
+- therubyracer
 
 ## How to use
 

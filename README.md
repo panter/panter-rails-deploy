@@ -10,7 +10,7 @@ This gem sets up everything you need to deploy your application on the Panter ra
 
 ## How to use
 
-- Add to your Gemfile:
+- Add to your Gemfile (global, not in a group):
   ```ruby
   gem 'panter-rails-deploy'
   ```

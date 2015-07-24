@@ -1,13 +1,13 @@
 Gem::Specification.new do |gem|
   gem.name        = 'panter-rails-deploy'
-  gem.version     = '1.0.3'
-  gem.date        = '2015-06-01'
+  gem.version     = '1.0.4'
+  gem.date        = '2015-07-24'
   gem.summary     = 'Capistrano setup for Panter Rails Hosting'
   gem.authors     = [ 'Markus Koller', 'Beat Seeliger' ]
   gem.email       = 'mak@panter.ch'
   gem.homepage    = 'https://github.com/panter/panter-rails-deploy'
   gem.license     = 'Beerware'
-  gem.required_ruby_version = '>= 2.0.0'
+  gem.required_ruby_version = '>= 1.9.0'
 
   gem.files         = `git ls-files`.split($/)
   gem.require_paths = [ 'lib' ]

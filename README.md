@@ -15,9 +15,9 @@ This gem sets up everything you need to deploy your application on the Panter ra
   gem 'panter-rails-deploy'
   ```
 
-- Capify your project:
+- Capify your project (Bundler is required here, [rbenv-binstubs](https://github.com/ianheggie/rbenv-binstubs) is recommended):
   ```sh
-  cap install
+  bundle exec cap install
   ```
 
 - Add `require 'panter-rails-deploy'` to `Capfile`
@@ -33,7 +33,7 @@ This gem sets up everything you need to deploy your application on the Panter ra
 
 - Profit:
   ```sh
-  cap production deploy
+  bundle exec cap production deploy
   ```
 
 ## dotenv setup

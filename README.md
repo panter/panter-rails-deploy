@@ -12,14 +12,7 @@ This gem sets up everything you need to deploy your application on the Panter ra
 
 - Add to your Gemfile (global, not in a group):
   ```ruby
-  # Rails with asset compilation
   gem 'panter-rails-deploy'
-
-  # Rails without asset compilation
-  gem 'panter-rails-deploy', require: 'panter-rails-deploy/without-assets'
-
-  # Other Rack applications
-  gem 'panter-rails-deploy', require: 'panter-rails-deploy/without-rails'
   ```
 
 - Capify your project (Bundler is required here, [rbenv-binstubs](https://github.com/ianheggie/rbenv-binstubs) is recommended):
@@ -27,7 +20,17 @@ This gem sets up everything you need to deploy your application on the Panter ra
   bundle exec cap install
   ```
 
-- Add `require 'panter-rails-deploy'` to `Capfile`
+- Add to your `Capfile`:
+  ```ruby
+  # Rails with asset compilation
+  require 'panter-rails-deploy'
+
+  # Rails without asset compilation
+  require 'panter-rails-deploy/without-assets'
+
+  # Other Rack applications
+  require 'panter-rails-deploy/without-rails'
+  ```
 
 - Set `:application` and `:repo_url` in `config/deploy.rb`
 

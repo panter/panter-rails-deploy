@@ -12,7 +12,14 @@ This gem sets up everything you need to deploy your application on the Panter ra
 
 - Add to your Gemfile (global, not in a group):
   ```ruby
+  # Rails with asset compilation
   gem 'panter-rails-deploy'
+
+  # Rails without asset compilation
+  gem 'panter-rails-deploy', require: 'panter-rails-deploy/without-assets'
+
+  # Other Rack applications
+  gem 'panter-rails-deploy', require: 'panter-rails-deploy/without-rails'
   ```
 
 - Capify your project (Bundler is required here, [rbenv-binstubs](https://github.com/ianheggie/rbenv-binstubs) is recommended):

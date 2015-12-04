@@ -10,37 +10,37 @@ This gem sets up everything you need to deploy your application on the Panter ra
 
 ## How to use
 
-- Add to your Gemfile (global, not in a group):
+- Add to your Gemfile **(globally, not in a group)**:
   ```ruby
   gem 'panter-rails-deploy'
   ```
 
-- Capify your project (Bundler is required here, [rbenv-binstubs](https://github.com/ianheggie/rbenv-binstubs) is recommended):
+- Capify your project (`bundle exec` is required here, unless you use [rbenv-binstubs](https://github.com/ianheggie/rbenv-binstubs)):
   ```sh
   bundle exec cap install
   ```
 
-- Add one of these to your `Capfile` - below the line 'Include tasks from other gems included in your Gemfile':
+- Add one of these to your `Capfile` - below the line "Include tasks from other gems included in your Gemfile":
   
-  For rails projects with asset compilation
+  For a standard Rails project with asset compilation:
 
   ```ruby
   require 'panter-rails-deploy'
   ```
 
-  For rails projects without asset compilation
+  For a Rails project that doesn't use asset compilation:
 
   ```ruby
   require 'panter-rails-deploy/without-assets'
   ```
 
-  For other Rack applications
+  For other Rack applications:
   
   ```ruby
   require 'panter-rails-deploy/without-rails'
   ```
 
-- Set `:application` and `:repo_url` in `config/deploy.rb`
+- Set `:application` and `:repo_url` in `config/deploy.rb` (note that in previous Capistrano versions it was called `:repository` instead)
 
 - Set up your stages in `config/deploy` folder (e.g. `config/deploy/production.rb`):
   ```ruby

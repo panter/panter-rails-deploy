@@ -20,15 +20,23 @@ This gem sets up everything you need to deploy your application on the Panter ra
   bundle exec cap install
   ```
 
-- Add to your `Capfile`:
+- Add one of these to your `Capfile` - below the line 'Include tasks from other gems included in your Gemfile':
+  
+  For rails projects with asset compilation
+
   ```ruby
-  # Rails with asset compilation
   require 'panter-rails-deploy'
+  ```
 
-  # Rails without asset compilation
+  For rails projects without asset compilation
+
+  ```ruby
   require 'panter-rails-deploy/without-assets'
+  ```
 
-  # Other Rack applications
+  For other Rack applications
+  
+  ```ruby
   require 'panter-rails-deploy/without-rails'
   ```
 

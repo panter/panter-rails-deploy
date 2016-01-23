@@ -1,12 +1,15 @@
 # Panter Rails Deploy
 
-This gem sets up everything you need to deploy your application on the Panter rails hosting:
+This gem sets up everything you need to deploy your application on the Panter Rails hosting:
 
-- capistrano 3
-- unicorn
-- rbenv
-- dotenv
-- therubyracer
+- [Capistrano 3](https://github.com/capistrano/capistrano) setup for:
+  - [Rails](https://github.com/capistrano/rails)
+  - [Bundler](https://github.com/capistrano/bundler)
+  - [rbenv](https://github.com/capistrano/rbenv)
+  - [ruby-install](https://github.com/capistrano-plugins/capistrano-rbenv-install)
+- [unicorn-rails](https://github.com/samuelkadolph/unicorn-rails)
+- [dotenv-rails](https://github.com/bkeepers/dotenv)
+- [therubyracer](https://github.com/cowboyd/therubyracer) for [ExecJS](https://github.com/rails/execjs), used for asset compilation on the server
 
 ## How to use
 
@@ -56,12 +59,16 @@ This gem sets up everything you need to deploy your application on the Panter ra
 
 ## dotenv setup
 
-This is optional, but recommended:
+Using `dotenv` is the [recommended approach](http://12factor.net/config) to store sensitive configuration in the environment instead of code repositories.
 
 - Add a file on your servers in `/home/app/app/shared/.env` with your keys:
   ```sh
-  RAILS_SECRET_KEY_BASE: ...
+  RAILS_SECRET_KEY_BASE: 89d20f0...
   ```
+  
+  - You can add any other key-value pairs, they'll simply be injected into `ENV`
+  - You can use `rake secret` / `rails secret` (Rails 5) to generate a new secure key
+  - Rails uses `SECRET_KEY_BASE` by default, but adding a `RAILS_` prefix is recommended since `dotenv` itself is framework-agnostic
 
 - If you need keys in development as well, add `.env` locally and add it to `.gitignore`
 
@@ -75,3 +82,5 @@ This is optional, but recommended:
   ```ruby
   set :linked_files, fetch(:linked_files, []).push('.env')
   ```
+
+  - The `fetch(..., []).push(...)` approach is needed for `:linked_files` and `:linked_dirs` to keep the values added by this Gem

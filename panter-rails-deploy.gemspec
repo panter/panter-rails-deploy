@@ -21,11 +21,6 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'unicorn-rails'
   gem.add_dependency 'dotenv-rails'
 
-  # work around problem with sshkit 1.8.0,
-  # see https://github.com/capistrano/sshkit/issues/303
-  # and https://github.com/capistrano/rbenv/pull/59
-  gem.add_dependency 'sshkit', '~> 1.7.1'
-
   # Asset pipeline dependencies
   gem.add_dependency 'therubyracer'
 end

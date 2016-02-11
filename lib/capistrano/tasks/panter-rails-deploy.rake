@@ -7,7 +7,7 @@ namespace :load do
     set :log_level, :info
 
     set :linked_files, %w[ config/database.yml ]
-    set :linked_dirs, %w[ log tmp/cache ]
+    set :linked_dirs, %w[ log tmp/cache tmp/pids ]
 
     # Setup capistrano-rails
     set :rails_env, 'production'

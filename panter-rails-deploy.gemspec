@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.authors     = [ 'Markus Koller', 'Beat Seeliger' ]
   gem.email       = 'mak@panter.ch'
   gem.homepage    = 'https://github.com/panter/panter-rails-deploy'
-  gem.license     = 'Beerware'
+  gem.license     = 'MIT'
   gem.required_ruby_version = '>= 2.0.0'
 
   gem.files         = `git ls-files`.split($/)

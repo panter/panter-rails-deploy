@@ -20,6 +20,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'capistrano-rbenv-install'
   gem.add_dependency 'unicorn-rails'
   gem.add_dependency 'dotenv-rails'
+  gem.add_dependency 'highline'
 
   # Asset pipeline dependencies
   gem.add_dependency 'therubyracer'

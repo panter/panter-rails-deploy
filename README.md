@@ -18,6 +18,12 @@ This gem sets up everything you need to deploy your application on the Panter Ra
   gem 'panter-rails-deploy'
   ```
 
+  **Note:** Also remove these gems if already present:
+  - `unicorn`, `unicorn-rails`
+  - `dotenv`, `dotenv-rails`
+  - `capistrano`, `capistrano-ext`, `capistrano-rails`, `capistrano-bundler`, `capistrano-rbenv`
+  - `therubyracer`
+
 - Capify your project (`bundle exec` is required here, unless you use [rbenv-binstubs](https://github.com/ianheggie/rbenv-binstubs)):
   ```sh
   bundle exec cap install

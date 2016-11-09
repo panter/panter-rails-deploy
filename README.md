@@ -86,7 +86,7 @@ Using `dotenv` is the [recommended approach](http://12factor.net/config) to stor
 
 - Update `config/deploy.rb` to symlink the `.env` file during deploy:
   ```ruby
-  set :linked_files, fetch(:linked_files, []).push('.env')
+  append :linked_files, '.env'
   ```
 
   - The `fetch(..., []).push(...)` approach is needed for `:linked_files` and `:linked_dirs` to keep the values added by this Gem

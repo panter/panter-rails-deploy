@@ -7,7 +7,7 @@ namespace :load do
     set :log_level, :info
 
     set :linked_files, %w[ config/database.yml ]
-    set :linked_dirs, %w[ log tmp/cache tmp/pids ]
+    set :linked_dirs, %w[ log tmp/cache tmp/pids tmp/sockets ]
 
     # Setup capistrano-rails
     set :rails_env, 'production'
@@ -21,10 +21,10 @@ namespace :load do
 end
 
 namespace :deploy do
-  after :restart, :clear_cache do
+  after :restart, :restart_unicorn do
     on roles(:app), in: :sequence do
       with rails_env: fetch(:rails_env) do
-        execute '$HOME/bin/unicorn_wrapper', 'restart'
+        execute '$HOME/bin/unicorn_wrapper', 'graceful-restart'
       end
     end
   end

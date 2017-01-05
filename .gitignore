@@ -1,5 +1,5 @@
 /.bundle
 /Gemfile.lock
 /Capfile
-/config
+/log
 /pkg

@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name        = 'panter-rails-deploy'
-  gem.version     = '1.3.1'
+  gem.version     = '1.3.2'
   gem.date        = '2016-07-26'
   gem.summary     = 'Capistrano setup for Panter Rails Hosting'
   gem.authors     = [ 'Markus Koller', 'Beat Seeliger' ]
@@ -13,7 +13,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = [ 'lib' ]
 
   # Deployment dependencies
-  gem.add_dependency 'capistrano', '~> 3.5.0'
+  gem.add_dependency 'capistrano', '~> 3.5'
   gem.add_dependency 'capistrano-rails'
   gem.add_dependency 'capistrano-bundler'
   gem.add_dependency 'capistrano-rbenv'

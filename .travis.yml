@@ -10,6 +10,10 @@ before_script:
 
 script:
   - bundle exec rake test
+  - echo "require 'panter-rails-deploy/without-assets'" > Capfile
+  - bundle exec rake test
+  - echo "require 'panter-rails-deploy/without-rails'" > Capfile
+  - bundle exec rake test
 
 env:
   - rails=4.2.0

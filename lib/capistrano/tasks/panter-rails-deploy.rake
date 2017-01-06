@@ -30,3 +30,6 @@ namespace :deploy do
   end
   after :publishing, :restart
 end
+
+# Load custom application tasks from `lib/capistrano/tasks`
+Dir.glob('lib/capistrano/tasks/*.rake').each { |r| import r }

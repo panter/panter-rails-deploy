@@ -1,3 +1,7 @@
+### v1.3.4
+
+- Also fix the deprecation warning for without-assets/without-rails
+
 ### v1.3.3
 
 - Fix deprecation warning about Git SCM plugin

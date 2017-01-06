@@ -1,5 +1,8 @@
 # Panter Rails Deploy
 
+[![Build Status](https://travis-ci.org/panter/panter-rails-deploy.svg?branch=master)](https://travis-ci.org/panter/panter-rails-deploy)
+[![Gem Version](https://badge.fury.io/rb/panter-rails-deploy.svg)](https://rubygems.org/gems/panter-rails-deploy)
+
 This gem sets up everything you need to deploy your application on the Panter Rails hosting:
 
 - [Capistrano 3](https://github.com/capistrano/capistrano) setup for:
@@ -29,7 +32,7 @@ This gem sets up everything you need to deploy your application on the Panter Ra
   bundle exec cap install
   ```
 
-- Add one of these to your `Capfile` - below the line "Include tasks from other gems included in your Gemfile":
+- You can replace the contents of `Capfile` with one of these lines:
   
   For a standard Rails project with asset compilation:
 

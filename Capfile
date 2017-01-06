@@ -1,0 +1,1 @@
+require 'panter-rails-deploy'

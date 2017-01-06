@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+Bundler.require :default
+
+require 'panter-rails-deploy'
+
+require 'pry'
+Pry.start

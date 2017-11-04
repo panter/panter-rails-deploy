@@ -1,7 +1,8 @@
 # Panter Rails Deploy
 
-[![Build Status](https://travis-ci.org/panter/panter-rails-deploy.svg?branch=master)](https://travis-ci.org/panter/panter-rails-deploy)
 [![Gem Version](https://badge.fury.io/rb/panter-rails-deploy.svg)](https://rubygems.org/gems/panter-rails-deploy)
+[![Build Status](https://travis-ci.org/panter/panter-rails-deploy.svg?branch=master)](https://travis-ci.org/panter/panter-rails-deploy)
+[![Dependency Status](https://gemnasium.com/panter/panter-rails-deploy.svg)](https://gemnasium.com/panter/panter-rails-deploy)
 
 This gem sets up everything you need to deploy your application on the Panter Rails hosting:
 

@@ -33,7 +33,7 @@ This gem sets up everything you need to deploy your application on the Panter Ra
   bundle exec cap install
   ```
 
-- You can replace the contents of `Capfile` with one of these lines:
+- Load the gem in your `Capfile` with one of these lines:
   
   For a standard Rails project with asset compilation:
 

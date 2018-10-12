@@ -1,7 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name        = 'panter-rails-deploy'
   gem.version     = '1.3.5'
-  gem.date        = '2017-01-06'
   gem.summary     = 'Capistrano setup for Panter Rails Hosting'
   gem.authors     = [ 'Markus Koller', 'Beat Seeliger' ]
   gem.email       = 'mak@panter.ch'

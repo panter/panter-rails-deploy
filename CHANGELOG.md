@@ -1,3 +1,7 @@
+### v1.3.5
+
+- Replace deprecated therubyracer gem with mini_racer
+
 ### v1.3.4
 
 - Also fix the deprecation warning for without-assets/without-rails

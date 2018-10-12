@@ -13,7 +13,7 @@ This gem sets up everything you need to deploy your application on the Panter Ra
   - [ruby-install](https://github.com/capistrano-plugins/capistrano-rbenv-install)
 - [unicorn-rails](https://github.com/samuelkadolph/unicorn-rails)
 - [dotenv-rails](https://github.com/bkeepers/dotenv)
-- [therubyracer](https://github.com/cowboyd/therubyracer) for [ExecJS](https://github.com/rails/execjs), used for asset compilation on the server
+- [mini_racer](https://github.com/discourse/mini_racer) for [ExecJS](https://github.com/rails/execjs), used for asset compilation on the server
 
 ## How to use
 

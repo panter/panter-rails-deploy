@@ -27,6 +27,7 @@ This gem sets up everything you need to deploy your application on the Panter Ra
   - `dotenv`, `dotenv-rails`
   - `capistrano`, `capistrano-ext`, `capistrano-rails`, `capistrano-bundler`, `capistrano-rbenv`
   - `therubyracer`
+  - `mini_racer`
 
 - Capify your project (`bundle exec` is required here, unless you use [rbenv-binstubs](https://github.com/ianheggie/rbenv-binstubs)):
   ```sh

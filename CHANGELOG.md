@@ -1,3 +1,8 @@
+### v1.4.1
+
+- This gem now requires at least Ruby 2.3.1 to fix a problem with mini_racer
+  compilation, see https://bugs.ruby-lang.org/issues/11962
+
 ### v1.4.0
 
 - Replace deprecated therubyracer gem with mini_racer
